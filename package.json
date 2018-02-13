@@ -1,0 +1,47 @@
+{
+  "name": "oclif-plugin-example",
+  "version": "0.0.0",
+  "author": "Jeff Dickey @jdxcode",
+  "bugs": "https://github.com/oclif/oclif-plugin-example/issues",
+  "dependencies": {
+    "@oclif/command": "^1.2.23",
+    "@oclif/config": "^1.3.51",
+    "@oclif/errors": "^1.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.0.2",
+    "@oclif/plugin-help": "^1.0.1",
+    "eslint": "^4.17.0",
+    "eslint-config-oclif": "^1.3.7",
+    "globby": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    ".oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/oclif/oclif-plugin-example",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./src/commands",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "oclif/oclif-plugin-example",
+  "scripts": {
+    "clean": "rm -f .oclif.manifest.json",
+    "lint": "eslint .",
+    "postpublish": "yarn run clean",
+    "posttest": "yarn run lint",
+    "prepublishOnly": "oclif-dev manifest",
+    "preversion": "yarn run clean",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
