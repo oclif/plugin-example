@@ -12,4 +12,6 @@ HelloCommand.flags = {
   name: flags.string({char: 'n', description: 'name to print'}),
 }
 
+HelloCommand.description = 'example hello command'
+
 module.exports = HelloCommand
