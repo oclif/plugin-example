@@ -1,6 +1,6 @@
 {
   "name": "oclif-plugin-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Jeff Dickey @jdxcode",
   "bugs": "https://github.com/oclif/oclif-plugin-example/issues",
   "dependencies": {
